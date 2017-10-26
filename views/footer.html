@@ -1,0 +1,69 @@
+
+<!-- LOADING -->
+<div class="kd-modal-container kd-hide" id="loading-modal">
+  <div class="kd-modal-header kd-text-center">
+  </div>
+  <div class="kd-modal-content-blank">
+    <div class="kd-loader">
+      <div class="lds-css ng-scope">
+        <div class="lds-spinner" style="100%;height:100%"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END LOADING -->
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+  // open / close modal
+  $('.kd-toggle-pricing').click(function(){
+    $("#pricing-modal").toggleClass("kd-hide");
+  });
+
+  // create pro plan charge
+  $('.kd-create-pro-charge').click(function(){
+    $("#loading-modal").removeClass("kd-hide");
+    $.ajax({
+      url: "/pro",
+      type: 'POST',
+      dataType: 'json',
+      success: function(result){
+        window.top.location.href = result.redirect;
+      }
+    });
+  });
+
+  // create starter plan charge
+  $('.kd-create-starter-charge').click(function(){
+    $("#loading-modal").removeClass("kd-hide");
+    $.ajax({
+      url: "/starter",
+      type: 'POST',
+      dataType: 'json',
+      success: function(result){
+        window.top.location.href = result.redirect;
+      }
+    });
+  });
+
+});
+</script>
+
+
+<script type="text/javascript">
+  ShopifyApp.ready(function(){
+    ShopifyApp.Bar.loadingOff()
+    ShopifyApp.Bar.initialize({
+      icon: '/img/icon-dark-256.png',
+      title: '{{title}}'
+    });
+  });
+</script>
+
+
+</main>
+</body>
+</html>

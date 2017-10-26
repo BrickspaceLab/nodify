@@ -1,0 +1,47 @@
+<!-- HEADER -->
+<div class="kd-row kd-padding-1 kd-header">
+  <div class="kd-column">
+    <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeLarge">Error
+    </h1>
+  </div>
+  <div class="kd-column kd-text-right">
+    <a class="Polaris-Button Polaris-Button--disabled kd-opacity-0"><span class="Polaris-Button__Content"><span>New Fee</span></span></a>
+  </div>
+</div>
+<!-- END HEADER -->
+
+
+<div class="Polaris-Page Polaris-Page--fullWidth">
+
+  <div class="Polaris-Page__Content" style="margin-top:0;">
+    <div class="grid-x align-center">
+
+      <!-- ERROR MESSAGE -->
+      <div class="small-12 medium-10 large-8 cell kd-margin-t1">
+
+        <div class="Polaris-Banner Polaris-Banner--statusCritical" tabindex="0" role="alert" aria-live="polite" aria-labelledby="Banner3Heading" aria-describedby="Banner3Content">
+          <div class="Polaris-Banner__Ribbon"><span class="Polaris-Icon Polaris-Icon--colorRedDark Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><g fill-rule="evenodd"><circle fill="currentColor" cx="10" cy="10" r="9"></circle><path d="M2 10c0-1.846.635-3.543 1.688-4.897l11.209 11.209A7.954 7.954 0 0 1 10 18c-4.411 0-8-3.589-8-8m14.312 4.897L5.103 3.688A7.954 7.954 0 0 1 10 2c4.411 0 8 3.589 8 8a7.952 7.952 0 0 1-1.688 4.897M0 10c0 5.514 4.486 10 10 10s10-4.486 10-10S15.514 0 10 0 0 4.486 0 10"></path></g></svg></span></div>
+          <div>
+            <div class="Polaris-Banner__Heading" id="Banner3Heading">
+              <p class="Polaris-Heading">Error Code - {{ errorStatus }}</p>
+            </div>
+            <div class="Polaris-Banner__Content" id="Banner3Content">
+              <p>{{ errorMessage }}</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Polaris-PageActions kd-margin-t2">
+          <div class="Polaris-Stack Polaris-Stack--spacingTight Polaris-Stack--distributionTrailing">
+            <div class="Polaris-Stack__Item"><a href="/" class="kd-toggle-form kd-text-white Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Return to dashboard</span></span></a></div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END ERROR MESSAGE -->
+
+    </div>
+  </div>
+
+</div>

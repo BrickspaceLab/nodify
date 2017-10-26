@@ -1,0 +1,11 @@
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+  $.ajax({
+    url: "/trial",
+    type: 'POST',
+    dataType: 'json',
+    success: function(result){
+      window.top.location.href = result.redirect;
+    }
+  });
+</script>

@@ -1,0 +1,197 @@
+/*---*/
+/*SPACING*/
+/*---*/
+.kd-padding-b05 {
+  padding-bottom: 0.5em;
+}
+.kd-padding-lr05 {
+  padding:0 0.5em 0 0.5em;
+}
+.kd-padding-r05 {
+  padding:0 0.5em 0 0em;
+}
+.kd-padding-05 {
+  padding:0.5em;
+}
+.kd-padding-1 {
+  padding:1em;
+}
+.kd-padding-2 {
+  padding:2em;
+}
+.kd-margin-t05 {
+  margin-top: 0.5em;
+}
+.kd-margin-t1 {
+  margin-top: 1em;
+}
+.kd-margin-t2 {
+  margin-top: 2em;
+}
+.kd-margin-b05 {
+  margin-bottom: 0.5em;
+}
+.kd-margin-b1 {
+  margin-bottom: 1em;
+}
+.kd-margin-b2 {
+  margin-bottom: 2em;
+}
+
+
+/*---*/
+/*GRID*/
+/*---*/
+.kd-row {
+  display: -webkit-flex;
+  display: flex;
+}
+.kd-column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+/*---*/
+/*MISC*/
+/*---*/
+td {
+  border-top: 1px solid #c4cdd5;
+}
+.kd-header {
+  border-bottom: 2px solid #DFE4E8;
+}
+.kd-header-focus {
+  border-bottom: 2px solid #c4cdd5;
+  background: white;
+}
+.kd-cursor {
+  cursor: pointer;
+}
+.kd-opacity-0 {
+  opacity: 0;
+}
+.kd-hide {
+  display: none;
+}
+.kd-text-center {
+  text-align: center;
+}
+.kd-text-right {
+  text-align: right;
+}
+.kd-text-white {
+  color: #fff !important;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  opacity: 0.2;
+  border-color: #c4cdd5;
+}
+
+
+/*---*/
+/*MODALS*/
+/*---*/
+.kd-modal-container {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+
+  overflow: scroll;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.8);
+}
+.kd-modal-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+
+  border-radius: 3px;
+  background-color: #f4f6f8;
+}
+.kd-modal-content-blank {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+
+  border-radius: 3px;
+}
+@media (max-width: 900px) {
+  .kd-modal-content {
+    border-radius: 0;
+  }
+}
+.kd-modal-header {
+  top: 5vh;
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+.kd-modal-header a{
+  text-transform: uppercase;
+
+  color: white;
+}
+.kd-modal-header a:hover{
+  opacity: 0.8;
+  color: white;
+}
+.kd-modal-pricing {
+  padding: 20px;
+
+  border: #dfe3e8 2px solid;
+  border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+.kd-modal-pricing-selected {
+  border: #007ACE 2px solid !important;
+  border-radius: 3px !important;
+  background: #fff !important;
+}
+.kd-modal-pricing::before {
+  display: inline-block;
+
+  width: 100%;
+  margin-bottom: 12px;
+  padding-bottom: 3px;
+
+  content: "-";
+  text-align: center;
+
+  opacity: 0;
+  color: #007ACE;
+  border-bottom: 2px #007ACE solid;
+}
+.kd-modal-pricing-selected::before {
+  display: inline-block;
+
+  width: 100%;
+  margin-bottom: 12px;
+  padding-bottom: 3px;
+
+  content: "SELECTED PLAN";
+  text-align: center;
+
+  opacity: 1;
+  color: #007ACE;
+  border-bottom: 2px #007ACE solid;
+}

@@ -1,0 +1,80 @@
+<!-- HEADER -->
+<div class="kd-row kd-padding-1 kd-header">
+  <div class="kd-column">
+    <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeLarge">Settings
+    </h1>
+  </div>
+  <div class="kd-column kd-text-right">
+    <a href="/" class="kd-toggle-form kd-text-white Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>New Fee</span></span></a>
+  </div>
+</div>
+<!-- END HEADER -->
+
+
+<!-- CONTENT -->
+<div class="Polaris-Page Polaris-Page--fullWidth">
+
+
+  <div class="Polaris-Page__Content" style="margin-top:0;">
+    <div class="grid-x align-center">
+
+      <!-- SETTINGS -->
+      <div class="small-12 medium-10 large-8 cell kd-margin-t1">
+
+          <!-- BANNER -->
+          <div class="Polaris-Banner Polaris-Banner--statusInfo kd-margin-b1 kd-toggle-pricing kd-cursor" tabindex="0" role="status" aria-live="polite" aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
+            <div class="Polaris-Banner__Ribbon"><span class="Polaris-Icon Polaris-Icon--colorTealDark Polaris-Icon--hasBackdrop"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><g fill-rule="evenodd"><path fill="currentColor" d="M2 3h11v4h6l-2 4 2 4H8v-4H3"></path><path d="M16.105 11.447L17.381 14H9v-2h4a1 1 0 0 0 1-1V8h3.38l-1.274 2.552a.993.993 0 0 0 0 .895zM2.69 4H12v6H4.027L2.692 4zm15.43 7l1.774-3.553A1 1 0 0 0 19 6h-5V3c0-.554-.447-1-1-1H2.248L1.976.782a1 1 0 1 0-1.953.434l4 18a1.006 1.006 0 0 0 1.193.76 1 1 0 0 0 .76-1.194L4.47 12H7v3a1 1 0 0 0 1 1h11c.346 0 .67-.18.85-.476a.993.993 0 0 0 .044-.972l-1.775-3.553z"></path></g></svg></span></div>
+            <div class="Polaris-Banner__Content" id="Banner1Content">
+              <p>{{activeplan}} <span class="{{hideOnExpired}}">- Your trial will expire on {{trial}}.</span> <a>Learn more</a></p>
+            </div>
+          </div>
+          <!-- END BANNER -->
+
+
+          <!-- EXTRA LINKS -->
+          <div class="Polaris-Card kd-margin-t1">
+            <div class="Polaris-Card__Section Polaris-Card__Section--subdued kd-text-center">
+              <a href="" class="Polaris-Button Polaris-Button--sizeSlim"><span class="Polaris-Button__Content"><span>Support</span></span></a>
+              <a href="" class="Polaris-Button Polaris-Button--sizeSlim"><span class="Polaris-Button__Content"><span>Contact </span></span></a>
+            </div>
+          </div>
+          <!-- END EXTRA LINKS -->
+
+      </div>
+      <!-- END SETTINGS -->
+
+    </div>
+  </div>
+
+
+</div>
+<!-- END CONTENT -->
+
+
+<!-- PRICING -->
+<div class="kd-modal-container kd-hide" id="pricing-modal">
+  <div class="kd-modal-header kd-text-center">
+    <a class="kd-toggle-pricing kd-cursor">Close</a>
+  </div>
+  <div class="kd-modal-content">
+    <div class="grid-x grid-margin-x">
+      <div class="small-12 medium-6 cell kd-margin-b1 kd-modal-pricing {{starterPlanSelected}}">
+        <p class="Polaris-DisplayText Polaris-DisplayText--sizeMedium kd-text-center">Starter Plan</p>
+        <h3 aria-label="Accounts" class="Polaris-Subheading kd-text-center kd-margin-b1">$8/ Month</h3>
+        <hr/>
+        <p>Feature one</p>
+        <br/>
+        <button type="button" class="Polaris-Button Polaris-Button--fullWidth kd-create-starter-charge {{hideOnStarter}}" data-index="1"><span class="Polaris-Button__Content"><span>Downgrade Plan</span></span></button>
+      </div>
+      <div class="small-12 medium-6 cell kd-margin-b1 kd-modal-pricing {{proPlanSeleceted}}">
+        <p class="Polaris-DisplayText Polaris-DisplayText--sizeMedium kd-text-center">Pro Plan</p>
+        <h3 aria-label="Accounts" class="Polaris-Subheading kd-text-center kd-margin-b1">$14/ Month</h3>
+        <hr/>
+        <p>Feature one</p>
+        <br/>
+        <button type="button" class="Polaris-Button Polaris-Button--fullWidth Polaris-Button--primary kd-create-pro-charge {{hideOnPro}}" data-index="1"><span class="Polaris-Button__Content"><span>Upgrade Plan</span></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PRICING -->
